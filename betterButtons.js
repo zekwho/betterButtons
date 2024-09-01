@@ -8,8 +8,8 @@
 // @icon
 // @grant        GM_addStyle
 // @run-at       document-end
-// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/your-script.user.js
-// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/your-script.user.js
+// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
+// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
 // ==/UserScript==
 
 window.onload = (function() {
