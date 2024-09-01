@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         betterButtons
 // @namespace    https://github.com/zekwho/betterButtons
-// @version      1.0
+// @version      1.1
 // @description  Adds dynamic elements to buttons
 // @author       ZEK [3369]
 // @match        https://cartelempire.online/*
@@ -75,7 +75,7 @@ window.onload = (function() {
         }
     `);
     function applyGradientAnimationToButtons() {
-        const buttons = document.querySelectorAll('.btn-success, .btn-danger');
+        const buttons = document.querySelectorAll('.btn-success, .btn-danger');   //i have small ween
         buttons.forEach(button => {
             if (button.classList.contains('btn-success')) {
                 button.classList.add('job-button-gradient');
