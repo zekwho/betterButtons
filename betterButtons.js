@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         betterButtons
 // @namespace    https://github.com/zekwho/betterButtons
-// @version      1.0
+// @version      1.0.1
 // @description  Adds dynamic elements to buttons
 // @author       ZEK [3369]
 // @match        https://cartelempire.online/*
@@ -192,6 +192,7 @@ window.onload = (function() {
         'a[href="/Casino/blackjackStats"]',
         'a[href="/Expedition"]',
         'a[href="/Search/Users"]',
+        'a[href="/University"]',
         'a[href="/"]',
         'a[href="/Forum"]',
         'a[href="/Forum/0"]',
