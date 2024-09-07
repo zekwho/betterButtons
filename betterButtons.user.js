@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         betterButtons
 // @namespace    https://github.com/zekwho/betterButtons
-// @version      1.0.1
+// @version      1.0.2
 // @description  Adds dynamic elements to buttons
 // @author       ZEK [3369]
 // @match        https://cartelempire.online/*
 // @icon         https://i.imghippo.com/files/GrifA1725167124.png
 // @grant        GM_addStyle
 // @run-at       document-end
-// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
-// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
+// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.user.js
+// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.user.js
 // ==/UserScript==
 
 window.onload = (function() {
@@ -98,7 +98,7 @@ window.onload = (function() {
         }
     `);
     function applyGradientAnimationToButtons() {
-        const buttons = document.querySelectorAll('.btn-success, .btn-danger, button.backToCategoryBtn, label.chat-btn');
+        const buttons = document.querySelectorAll('.btn-success, .btn-danger, button.backToCategoryBtn, label.chat-btn, #setAllReadBtn');
         buttons.forEach(button => {
             if (button.classList.contains('btn-success')) {
                 button.classList.add('job-button-gradient');
@@ -106,6 +106,8 @@ window.onload = (function() {
                 button.classList.add('cancel-button-gradient');
             } else if (button.classList.contains('backToCategoryBtn')) {
                 button.classList.add('back-to-category-btn-gradient');
+                } else if (button.id === 'setAllReadBtn') { // Check for the specific button ID
+            button.classList.add('href-button-gradient');
             } else if (button.classList.contains('chat-btn')) {
                 if (button.classList.contains('newMessage')) {
                     button.classList.add('new-message-gradient');
@@ -206,6 +208,7 @@ window.onload = (function() {
         'a[href="/Forum/9"]',
         'a[href="/Forum/11"]',
         'a[href="/Forum/10"]',
+        'a[href="/Town/Club"]',
     ]
     hrefButtons.forEach(selector => {
         const links = document.querySelectorAll(selector);
