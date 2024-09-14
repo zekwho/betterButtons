@@ -8,8 +8,8 @@
 // @icon         https://i.imghippo.com/files/GrifA1725167124.png
 // @grant        GM_addStyle
 // @run-at       document-end
-// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.user.js
-// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.user.js
+// @updateURL    https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
+// @downloadURL  https://raw.githubusercontent.com/zekwho/betterButtons/main/betterButtons.js
 // ==/UserScript==
 
 window.onload = (function() {
@@ -184,8 +184,10 @@ window.onload = (function() {
         'a[href="/Forum/8"]',
         'a[href="/Cartel/Perks"]',
         'a[href="/Cartel/Armory"]',
+        'a[href="/Cartel/Armory/Deposit"]',
         'a[href="/Cartel/Territory"]',
         'a[href="/Cartel/Newsletter"]',
+        'a[href="/Cartel"]',
         'a[href="/User/Stats"]',
         'a[href*="/User/"][href*="/images"]',
         'a[href="/Town"]',
