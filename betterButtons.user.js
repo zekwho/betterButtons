@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         betterButtons
 // @namespace    https://github.com/zekwho/betterButtons
-// @version      1.0.2
+// @version      1.0.3
 // @description  Adds dynamic elements to buttons
 // @author       ZEK [3369]
 // @match        https://cartelempire.online/*
