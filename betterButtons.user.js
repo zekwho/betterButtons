@@ -211,6 +211,8 @@ window.onload = (function() {
         'a[href="/Forum/11"]',
         'a[href="/Forum/10"]',
         'a[href="/Town/Club"]',
+        'a[href="/Cartel/EditAnnouncement"]',
+        'a[href="/Cartel/Applications"]'
     ]
     hrefButtons.forEach(selector => {
         const links = document.querySelectorAll(selector);
